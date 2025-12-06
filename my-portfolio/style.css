@@ -1,0 +1,58 @@
+/* CSS 变量 - 定义主题 */
+:root {
+  --primary-color: #2563eb;
+  --bg-color: #ffffff;
+  --text-color: #1f2937;
+  --card-bg: #f9fafb;
+  --border-color: #e5e7eb;
+  --transition-speed: 0.3s;
+  --max-width: 1200px;
+}
+
+/* 深色模式变量 */
+body.dark-mode {
+  --primary-color: #60a5fa;
+  --bg-color: #111827;
+  --text-color: #f9fafb;
+  --card-bg: #1f2937;
+  --border-color: #374151;
+}
+
+/* 基础与响应式 */
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 响应式网格 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* 卡片样式 */
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+}

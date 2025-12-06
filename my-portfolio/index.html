@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Roland4210 的个人作品集与全栈学习日志" />
+    <title>Roland4210 | 全栈学习之旅</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- 使用语义化标签 -->
+    <header class="site-header">
+      <div class="container">
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#goals">学习目标</a></li>
+            <li><a href="#contact">联系</a></li>
+          </ul>
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="切换深色/浅色模式"
+          >
+            🌓
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <h1>你好，我是 Roland4210</h1>
+          <p>
+            一名专注的全栈开发学习者，目前为专科大二学生。这是我的技术成长记录站。
+          </p>
+          <p>
+            <strong>当前技能树：</strong> HTML5, CSS3, JavaScript (ES6+)，正在向
+            React 与 Node.js 进阶。
+          </p>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>项目展示</h2>
+          <div class="project-grid">
+            <article class="project-card">
+              <h3>响应式个人作品集（当前项目）</h3>
+              <p>
+                使用纯 HTML、CSS 和原生 JavaScript
+                构建，实现了深色模式、响应式布局和语义化结构。
+              </p>
+              <p class="tech-tag">#HTML5 #CSS3 #JavaScript #Git</p>
+            </article>
+            <article class="project-card">
+              <h3>待建：全栈电商应用</h3>
+              <p>
+                计划中的学习项目，将整合 React 前端、Node.js 后端与 MongoDB
+                数据库。
+              </p>
+              <p class="tech-tag">#React #Node.js #MongoDB #FullStack</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="goals" class="section">
+        <div class="container">
+          <h2>学习路线图</h2>
+          <ol class="roadmap">
+            <li>
+              <strong>第一阶段（当前）：</strong> 夯实前端基础，构建本作品集 ✅
+            </li>
+            <li><strong>第二阶段：</strong> 掌握 React 与前端工程化</li>
+            <li><strong>第三阶段：</strong> 学习 Node.js 与数据库</li>
+            <li><strong>第四阶段：</strong> 全栈整合与项目部署</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p id="liveDateTime">正在加载时间...</p>
+        <p>© 2023 Roland4210. 本页面持续更新中。</p>
+        <p>
+          GitHub:
+          <a href="https://github.com/Roland4210" target="_blank"
+            >@Roland4210</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
